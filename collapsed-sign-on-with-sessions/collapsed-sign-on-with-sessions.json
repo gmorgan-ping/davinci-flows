@@ -1123,13 +1123,13 @@
         "httpConnector",
         "variablesConnector"
       ],
-      "createdDate": 1678217872640,
-      "currentVersion": 15,
+      "createdDate": 1678219732052,
+      "currentVersion": 22,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
       "description": "Imported on Tue Mar 07 2023 19:05:20 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Sign On with Registration, Password Reset and Recovery",
-      "publishedVersion": 15,
+      "publishedVersion": 22,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -1137,7 +1137,8 @@
         "debugMode": true,
         "cssLinks": [
           "https://assets.pingone.com/ux/end-user-nano/0.1.0-alpha.0/end-user-nano.css",
-          "https://assets.pingone.com/ux/astro-nano/0.1.0-alpha.4/icons.css"
+          "https://assets.pingone.com/ux/astro-nano/0.1.0-alpha.4/icons.css",
+          "https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css"
         ],
         "useCustomCSS": true,
         "logLevel": 3,
@@ -1148,9 +1149,9 @@
         "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}"
       },
       "trigger": {},
-      "updatedDate": 1678217909626,
+      "updatedDate": 1678219745265,
       "flowId": "4d3dca9fc4161ab2402e1ed17bd96fd1",
-      "versionId": 15,
+      "versionId": 22,
       "graphData": {
         "elements": {
           "nodes": [
@@ -2035,9 +2036,7 @@
                   "nodeTitle": {
                     "value": "Username/Password Form"
                   },
-                  "customCSS": {
-                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
-                  },
+                  "customCSS": {},
                   "validationRules": {
                     "value": []
                   },
@@ -3900,9 +3899,7 @@
                   "customHTML": {
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"<div\\n  class=\\\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0\\\">\\n  <div style=\\\"max-width: 400px; width: 100%\\\">\\n    <div class=\\\"card shadow mb-5\\\">\\n      <div class=\\\"card-body p-5 d-flex flex-column\\\">\\n        <img class=\\\"companyLogo align-self-center mb-5\\\" alt=\\\"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"companyName\",\n        \"data\": \"{{global.variables.companyName}}\",\n        \"tooltip\": \"{{global.variables.companyName}}\",\n        \"children\": [\n          {\n            \"text\": \"{{global.variables.companyName}}\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\\\" />\\n        <h1 id=\\\"header\\\" class=\\\"text-center mb-4\\\">Create Your Profile</h1>\\n        <p id=\\\"feedback\\\" data-id=\\\"feedback\\\" class=\\\"text-danger mdi mdi-alert-circle\\\" data-skcomponent=\\\"skerror\\\"></p>\\n        <form id=\\\"registrationForm\\\" data-id=\\\"registrationForm\\\" class=\\\"form\\\">\\n          <div class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"email\\\" data-id=\\\"email\\\" class=\\\"form-control\\\" type=\\\"text\\\" name=\\\"email\\\" placeholder=\\\"Email Address\\\" autocomplete=\\\"off\\\" />\\n            <label id=\\\"emailLabel\\\" data-id=\\\"emailLabel\\\" class=\\\"form-label\\\" for=\\\"email\\\">Email Address</label>\\n          </div>\\n          <div class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"firstName\\\" data-id=\\\"firstName\\\" class=\\\"form-control\\\" type=\\\"text\\\" name=\\\"firstName\\\" placeholder=\\\"First Name\\\" autocomplete=\\\"off\\\" />\\n            <label id=\\\"firstNameLabel\\\" data-id=\\\"firstNameLabel\\\" class=\\\"form-label\\\" for=\\\"firstName\\\">First Name</label>\\n          </div>\\n          <div class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"lastName\\\" data-id=\\\"lastName\\\" class=\\\"form-control\\\" type=\\\"text\\\" placeholder=\\\"Last Name\\\" autocomplete=\\\"off\\\" name=\\\"lastName\\\" />\\n            <label id=\\\"lastNameLabel\\\" data-id=\\\"lastNameLabel\\\" class=\\\"form-label\\\" for=\\\"lastName\\\">Last Name</label>\\n          </div>\\n          <div id=\\\"passwordContainer\\\" class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"password\\\" data-id=\\\"password\\\" class=\\\"form-control\\\" type=\\\"password\\\" placeholder=\\\"Password\\\" autocomplete=\\\"off\\\" name=\\\"password\\\" />\\n            <label id=\\\"passwordLabel\\\" data-id=\\\"passwordLabel\\\" class=\\\"form-label\\\" for=\\\"password\\\">Password</label>\\n          </div>\\n          <div class=\\\"d-flex flex-column\\\">\\n            <button id=\\\"submitBtn\\\" data-id=\\\"submitBtn\\\" class=\\\"btn btn-primary mb-3\\\" type=\\\"submit\\\" data-skcomponent=\\\"skbutton\\\" \\n              data-skbuttontype=\\\"form-submit\\\" data-skform=\\\"registrationForm\\\" data-skbuttonvalue=\\\"REGISTER\\\">\\n                Save\\n              </button>\\n            <button id=\\\"cancelBtn\\\" data-id=\\\"cancelBtn\\\" class=\\\"btn btn-link\\\" type=\\\"submit\\\" data-skcomponent=\\\"skbutton\\\"\\n              data-skbuttontype=\\\"next-event\\\" data-skform=\\\"registrationForm\\\" data-skbuttonvalue=\\\"SIGNON\\\">\\n                Already have an account? Sign on\\n            </button>\\n          </div>\\n        </form>\\n      </div>\\n    </div>\\n  </div>\\n</div>\"\n      }\n    ]\n  }\n]"
                   },
-                  "customCSS": {
-                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
-                  },
+                  "customCSS": {},
                   "customScript": {
                     "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"email\").focus();\r\n};\r\n\r\nfunction makePasswordToggle(id) {\r\n    var container = document.getElementById(id);\r\n    var password = container.getElementsByTagName(\"input\")[0];\r\n    var toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    function showHidePassword() {\r\n        if (password.type == \"password\") {\r\n            password.setAttribute(\"type\", \"text\");\r\n            toggler.classList.add(\"mdi-eye-outline\");\r\n            toggler.classList.remove(\"mdi-eye-off-outline\");\r\n        } else {\r\n            toggler.classList.add(\"mdi-eye-off-outline\");\r\n            toggler.classList.remove(\"mdi-eye-outline\");\r\n            password.setAttribute(\"type\", \"password\");\r\n        }\r\n        password.focus();\r\n    };\r\n\r\n    toggler.addEventListener(\"click\", showHidePassword);\r\n}\r\n\r\nfunction start() {\r\n    makePasswordToggle(\"passwordContainer\");\r\n    focusOnFirstInputElement();\r\n}\r\n\r\nif (document.readyState === \"loading\") {\r\n    // Loading hasn't finished yet\r\n    document.addEventListener(\"DOMContentLoaded\", start);\r\n} else {\r\n    // `DOMContentLoaded` has already fired\r\n    start();\r\n}"
                   },
@@ -5246,9 +5243,7 @@
                   "customHTML": {
                     "value": "<div\n  class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n  <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n    <div class=\"card shadow mb-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n        <h1 id=\"header\" class=\"text-center mb-4\">Enter New Password</h1>\n        <p class=\"text-muted text-center\">\n          If you have an active account with a valid email address, you will\n          receive an email with a recovery code which you may enter here, along\n          with a new password.\n        </p>\n        <p class=\"text-muted text-center\">\n          If you do not have an account or email, please contact your\n          administrator to recover your password.\n        </p>\n        <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n        <form id=\"recoveryCodeForm\" data-id=\"recoveryCodeForm\">\n          <div class=\"mb-4 form-floating\">\n            <input id=\"recoveryCode\" data-id=\"recoveryCode\" class=\"form-control\" type=\"text\" name=\"recoveryCode\"\n              placeholder=\"Recovery Code\" autocomplete=\"on\" value=\"\"/>\n            <label id=\"recoveryCodeLabel\" data-id=\"recoveryCodeLabel\" class=\"form-label\" for=\"recoveryCode\">\n              Recovery Code\n            </label>\n          </div>\n          <div id=\"newPasswordContainer\" class=\"mb-4 form-floating\">\n            <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\" name=\"newPassword\"\n              placeholder=\"New Password\" autocomplete=\"on\" value=\"\" />\n            <label id=\"newPasswordLabel\" data-id=\"newPasswordLabel\" class=\"form-label\" for=\"newPassword\" >\n              New Password\n            </label>\n          </div>\n          <div class=\"d-flex flex-column\">\n            <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"form-submit\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"SUBMIT\" >\n              Submit\n            </button>\n            <button id=\"cancelBtn\" data-id=\"cancelBtn\" class=\"btn btn-link\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"next-event\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"CANCEL\">\n              Cancel\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
                   },
-                  "customCSS": {
-                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
-                  },
+                  "customCSS": {},
                   "customScript": {
                     "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"recoveryCode\").focus();\r\n};\r\n\r\nfunction makePasswordToggle(id) {\r\n    var container = document.getElementById(id);\r\n    var password = container.getElementsByTagName(\"input\")[0];\r\n    var toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    function showHidePassword() {\r\n        if (password.type == \"password\") {\r\n            password.setAttribute(\"type\", \"text\");\r\n            toggler.classList.add(\"mdi-eye-outline\");\r\n            toggler.classList.remove(\"mdi-eye-off-outline\");\r\n        } else {\r\n            toggler.classList.add(\"mdi-eye-off-outline\");\r\n            toggler.classList.remove(\"mdi-eye-outline\");\r\n            password.setAttribute(\"type\", \"password\");\r\n        }\r\n        password.focus();\r\n    };\r\n\r\n    toggler.addEventListener(\"click\", showHidePassword);\r\n}\r\n\r\nfunction start() {\r\n    makePasswordToggle(\"newPasswordContainer\");\r\n    focusOnFirstInputElement();\r\n}\r\n\r\nif (document.readyState === \"loading\") {\r\n    // Loading hasn't finished yet\r\n    document.addEventListener(\"DOMContentLoaded\", start);\r\n} else {\r\n    // `DOMContentLoaded` has already fired\r\n    start();\r\n}"
                   },
@@ -6538,9 +6533,7 @@
                   "nodeTitle": {
                     "value": "Display password reset form"
                   },
-                  "customCSS": {
-                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
-                  },
+                  "customCSS": {},
                   "customScript": {
                     "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"currentPassword\").focus();\r\n};\r\n\r\nfunction makePasswordToggle(id) {\r\n    var container = document.getElementById(id);\r\n    var password = container.getElementsByTagName(\"input\")[0];\r\n    var toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    function showHidePassword() {\r\n        if (password.type == \"password\") {\r\n            password.setAttribute(\"type\", \"text\");\r\n            toggler.classList.add(\"mdi-eye-outline\");\r\n            toggler.classList.remove(\"mdi-eye-off-outline\");\r\n        } else {\r\n            toggler.classList.add(\"mdi-eye-off-outline\");\r\n            toggler.classList.remove(\"mdi-eye-outline\");\r\n            password.setAttribute(\"type\", \"password\");\r\n        }\r\n        password.focus();\r\n    };\r\n\r\n    toggler.addEventListener(\"click\", showHidePassword);\r\n}\r\n\r\nfunction start() {\r\n    makePasswordToggle(\"currentPasswordContainer\");\r\n    makePasswordToggle(\"newPasswordContainer\");\r\n    focusOnFirstInputElement()\r\n}\r\n\r\nif (document.readyState === \"loading\") {\r\n    // Loading hasn't finished yet\r\n    document.addEventListener(\"DOMContentLoaded\", start);\r\n} else {\r\n    // `DOMContentLoaded` has already fired\r\n    start();\r\n}\r\n"
                   },
@@ -8892,7 +8885,7 @@
         }
       },
       "flowColor": "#CACED3",
-      "savedDate": 1678217872412,
+      "savedDate": 1678219731821,
       "variables": [
         {
           "context": "flowInstance",
