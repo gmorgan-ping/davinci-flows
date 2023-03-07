@@ -10,13 +10,13 @@
         "pingOneAuthenticationConnector",
         "nodeConnector"
       ],
-      "createdDate": 1678121466967,
-      "currentVersion": 181,
+      "createdDate": 1678218251051,
+      "currentVersion": 2,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
-      "description": "Checks user session. If expired or not present, proceeds to call 'PingOne Sign On with Registration and Password Recovery' flow",
+      "description": "Imported on Tue Mar 07 2023 19:05:21 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Session Main Flow ",
-      "publishedVersion": 181,
+      "publishedVersion": 1,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -37,9 +37,9 @@
       "trigger": {
         "type": "AUTHENTICATION"
       },
-      "updatedDate": 1678121469208,
-      "flowId": "c4f31d74d265d890b7624f1f72bcd4d4",
-      "versionId": 181,
+      "updatedDate": 1678218251061,
+      "flowId": "1a6a32207dbef6d2f0a9d335b79a583f",
+      "versionId": 2,
       "graphData": {
         "elements": {
           "nodes": [
@@ -436,12 +436,12 @@
                 "properties": {
                   "subFlowId": {
                     "value": {
-                      "label": "PingOne Sign On with Registration and Password Recovery",
-                      "value": "ad09a9f010510711d2b112eff1e88f00"
+                      "label": "PingOne Sign On with Registration, Password Reset and Recovery",
+                      "value": "4d3dca9fc4161ab2402e1ed17bd96fd1"
                     }
                   },
                   "subFlowVersionId": {
-                    "value": "-1"
+                    "value": -1
                   },
                   "nodeTitle": {
                     "value": "Sign On Flow"
@@ -1090,7 +1090,7 @@
         }
       },
       "flowColor": "#ff661c",
-      "savedDate": 1678121466459,
+      "savedDate": 1678218250970,
       "variables": [
         {
           "context": "flowInstance",
@@ -1109,7 +1109,7 @@
         }
       ],
       "connections": [],
-      "parentFlowId": "c4f31d74d265d890b7624f1f72bcd4d4"
+      "parentFlowId": "1a6a32207dbef6d2f0a9d335b79a583f"
     },
     {
       "companyId": "ee43f700-c751-494d-9dbf-70946a85b328",
@@ -1123,13 +1123,13 @@
         "httpConnector",
         "variablesConnector"
       ],
-      "createdDate": 1678133504693,
-      "currentVersion": 243,
+      "createdDate": 1678217872640,
+      "currentVersion": 15,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
-      "description": "Perform user authentication, calls subflows for password reset, password recovery and user registration",
+      "description": "Imported on Tue Mar 07 2023 19:05:20 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
-      "name": "PingOne Sign On with Registration and Password Recovery",
-      "publishedVersion": 234,
+      "name": "PingOne Sign On with Registration, Password Reset and Recovery",
+      "publishedVersion": 15,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -1148,9 +1148,9 @@
         "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}"
       },
       "trigger": {},
-      "updatedDate": 1678133504725,
-      "flowId": "ad09a9f010510711d2b112eff1e88f00",
-      "versionId": 243,
+      "updatedDate": 1678217909626,
+      "flowId": "4d3dca9fc4161ab2402e1ed17bd96fd1",
+      "versionId": 15,
       "graphData": {
         "elements": {
           "nodes": [
@@ -1188,7 +1188,7 @@
                 "idUnique": "upt2qd07bj"
               },
               "position": {
-                "x": 1564,
+                "x": 1568,
                 "y": 1054
               },
               "group": "nodes",
@@ -1241,7 +1241,7 @@
                 "idUnique": "0re8wbsb52"
               },
               "position": {
-                "x": 2164,
+                "x": 2168,
                 "y": 514
               },
               "group": "nodes",
@@ -1259,7 +1259,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1384,
+                "x": 1388,
                 "y": 1054
               },
               "group": "nodes",
@@ -1304,7 +1304,7 @@
                 }
               },
               "position": {
-                "x": 3034,
+                "x": 3038,
                 "y": 1054
               },
               "group": "nodes",
@@ -1337,7 +1337,7 @@
                 }
               },
               "position": {
-                "x": 334,
+                "x": 338,
                 "y": 3784
               },
               "group": "nodes",
@@ -1355,7 +1355,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 424,
+                "x": 428,
                 "y": 3784
               },
               "group": "nodes",
@@ -1373,7 +1373,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2884,
+                "x": 2888,
                 "y": 514
               },
               "group": "nodes",
@@ -1404,7 +1404,7 @@
                 }
               },
               "position": {
-                "x": 334,
+                "x": 338,
                 "y": 1954
               },
               "group": "nodes",
@@ -1422,7 +1422,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 424,
+                "x": 428,
                 "y": 1954
               },
               "group": "nodes",
@@ -1474,7 +1474,7 @@
                 }
               },
               "position": {
-                "x": 2764,
+                "x": 2768,
                 "y": 514
               },
               "group": "nodes",
@@ -1511,7 +1511,7 @@
                 "idUnique": "efipo9nts6"
               },
               "position": {
-                "x": 3034,
+                "x": 3038,
                 "y": 664
               },
               "group": "nodes",
@@ -1550,7 +1550,7 @@
                 }
               },
               "position": {
-                "x": 3214,
+                "x": 3218,
                 "y": 514
               },
               "group": "nodes",
@@ -1569,7 +1569,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1384,
+                "x": 1388,
                 "y": 844
               },
               "group": "nodes",
@@ -1602,7 +1602,7 @@
                 }
               },
               "position": {
-                "x": 1564,
+                "x": 1568,
                 "y": 844
               },
               "group": "nodes",
@@ -1620,7 +1620,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2884,
+                "x": 2888,
                 "y": 664
               },
               "group": "nodes",
@@ -1653,7 +1653,7 @@
                 }
               },
               "position": {
-                "x": 334,
+                "x": 338,
                 "y": 1384
               },
               "group": "nodes",
@@ -1671,7 +1671,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 454,
+                "x": 458,
                 "y": 1384
               },
               "group": "nodes",
@@ -1711,7 +1711,7 @@
                 "idUnique": "n0jc92tdiz"
               },
               "position": {
-                "x": 1564,
+                "x": 1568,
                 "y": 1384
               },
               "group": "nodes",
@@ -1748,7 +1748,7 @@
                 "idUnique": "efipo9nts6"
               },
               "position": {
-                "x": 3214,
+                "x": 3218,
                 "y": 844
               },
               "group": "nodes",
@@ -1766,7 +1766,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2884,
+                "x": 2888,
                 "y": 844
               },
               "group": "nodes",
@@ -1784,7 +1784,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2884,
+                "x": 2888,
                 "y": 1054
               },
               "group": "nodes",
@@ -1835,7 +1835,7 @@
                 "idUnique": "31w82ae734"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 1204
               },
               "group": "nodes",
@@ -1868,7 +1868,7 @@
                 }
               },
               "position": {
-                "x": 330,
+                "x": 334,
                 "y": 2850
               },
               "group": "nodes",
@@ -1887,7 +1887,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 420,
+                "x": 424,
                 "y": 2850
               },
               "group": "nodes",
@@ -1923,7 +1923,7 @@
                 }
               },
               "position": {
-                "x": 1564,
+                "x": 1568,
                 "y": 664
               },
               "group": "nodes",
@@ -1980,7 +1980,7 @@
                 "idUnique": "6ymcsgz021"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 1264
               },
               "group": "nodes",
@@ -2005,7 +2005,7 @@
                 "type": "trigger",
                 "properties": {
                   "customHTML": {
-                    "value": "<div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n        <div class=\"card shadow mb-5\">\n            <div class=\"card-body p-5 d-flex flex-column\">\n                <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                <h1 class=\"text-center mb-4\">Sign On</h1>\n                <p class=\"text-muted text-center\">Welcome to Ping Identity</p>\n                <p class=\"text-danger mdi mdi-alert-circle\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n                <form id=\"usernamePasswordForm\" data-id=\"usernamePasswordForm\">\n                    <div class=\"mb-4 form-floating\">\n                        <input class=\"form-control\" type=\"text\" id=\"username\" name=\"username\" placeholder=\"username\"\n                            autocomplete=\"off\" value=\"\" data-id=\"username-input\" />\n                        <label class=\"form-label\" for=\"username\">Username</label>\n                    </div>\n                    <div class=\"mb-4 form-floating\">\n                        <input class=\"form-control\" type=\"password\" id=\"password\" name=\"password\" placeholder=\"Password\"\n                            autocomplete=\"off\" value=\"\" data-id=\"password-input\" />\n                        <label class=\"form-label\" for=\"password\">Password</label>\n                    </div>\n                    <div class=\"d-flex flex-column\">\n                        <button data-id=\"button\" type=\"submit\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                            data-skbuttontype=\"form-submit\" data-skform=\"usernamePasswordForm\" id=\"btnSignIn\"\n                            data-skbuttonvalue=\"SIGNON\">\n                            Sign On\n                        </button>\n                        <div class=\"d-flex flex-column\">\n                            <button data-id=\"button\" type=\"submit\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\" data-skform=\"usernamePasswordForm\" id=\"btnTrouble\"\n                                data-skbuttonvalue=\"TROUBLE\">\n                                Having trouble signing on?\n                            </button>\n                            <button data-id=\"button\" type=\"submit\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\" data-skform=\"usernamePasswordForm\" id=\"btnRegister\"\n                                data-skbuttonvalue=\"REGISTER\">\n                                No account? Register now!\n                            </button>\n                        </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>"
+                    "value": "<div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n        <div class=\"card shadow mb-5\">\n            <div class=\"card-body p-5 d-flex flex-column\">\n                <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                <h1 class=\"text-center mb-4\">Sign On</h1>\n                <p class=\"text-muted text-center\">Welcome to Ping Identity</p>\n                <p class=\"text-danger mdi mdi-alert-circle\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n                <form id=\"usernamePasswordForm\" data-id=\"usernamePasswordForm\">\n                    <div class=\"mb-4 form-floating\">\n                        <input class=\"form-control\" type=\"text\" id=\"username\" name=\"username\" placeholder=\"username\"\n                            autocomplete=\"off\" value=\"\" data-id=\"username-input\" />\n                        <label class=\"form-label\" for=\"username\">Username</label>\n                    </div>\n                    <div id=\"passwordContainer\" class=\"mb-4 form-floating\">\n                        <input class=\"form-control\" type=\"password\" id=\"password\" name=\"password\" placeholder=\"Password\"\n                            autocomplete=\"off\" value=\"\" data-id=\"password-input\" />\n                        <label class=\"form-label\" for=\"password\">Password</label>\n                    </div>\n                    <div class=\"d-flex flex-column\">\n                        <button data-id=\"button\" type=\"submit\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                            data-skbuttontype=\"form-submit\" data-skform=\"usernamePasswordForm\" id=\"btnSignIn\"\n                            data-skbuttonvalue=\"SIGNON\">\n                            Sign On\n                        </button>\n                        <div class=\"d-flex flex-column\">\n                            <button data-id=\"button\" type=\"submit\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\" data-skform=\"usernamePasswordForm\" id=\"btnTrouble\"\n                                data-skbuttonvalue=\"TROUBLE\">\n                                Having trouble signing on?\n                            </button>\n                            <button data-id=\"button\" type=\"submit\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\" data-skform=\"usernamePasswordForm\" id=\"btnRegister\"\n                                data-skbuttonvalue=\"REGISTER\">\n                                No account? Register now!\n                            </button>\n                        </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>"
                   },
                   "formFieldsList": {
                     "value": [
@@ -2035,7 +2035,9 @@
                   "nodeTitle": {
                     "value": "Username/Password Form"
                   },
-                  "customCSS": {},
+                  "customCSS": {
+                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
+                  },
                   "validationRules": {
                     "value": []
                   },
@@ -2043,12 +2045,13 @@
                     "value": "#afd5ffff"
                   },
                   "customScript": {
-                    "value": "const focusOnFirstInputElement = () => {\n    document.getElementById(\"username\").focus();\n};\n\n/**\n * If page isn't loaded yet, wait for the page to load, then focus on first\n * input element.\n */\nif (document.readyState === \"loading\") {\n    // Loading hasn't finished yet\n    document.addEventListener(\"DOMContentLoaded\", focusOnFirstInputElement);\n} else {\n    // `DOMContentLoaded` has already fired\n    focusOnFirstInputElement();\n}"
-                  }
+                    "value": "const focusOnFirstInputElement = () => {\n    document.getElementById(\"username\").focus();\n};\n\nfunction makePasswordToggle(id) {\n    var container = document.getElementById(id);\n    var password = container.getElementsByTagName(\"input\")[0];\n    var toggler = document.createElement(\"button\");\n    toggler.setAttribute(\"type\", \"button\");\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\n    container.appendChild(toggler);\n\n    function showHidePassword() {\n        if (password.type == \"password\") {\n            password.setAttribute(\"type\", \"text\");\n            toggler.classList.add(\"mdi-eye-outline\");\n            toggler.classList.remove(\"mdi-eye-off-outline\");\n        } else {\n            toggler.classList.add(\"mdi-eye-off-outline\");\n            toggler.classList.remove(\"mdi-eye-outline\");\n            password.setAttribute(\"type\", \"password\");\n        }\n        password.focus();\n    };\n\n    toggler.addEventListener(\"click\", showHidePassword);\n}\n\nfunction start() {\n    makePasswordToggle(\"passwordContainer\");\n    focusOnFirstInputElement();\n}\n\nif (document.readyState === \"loading\") {\n    // Loading hasn't finished yet\n    document.addEventListener(\"DOMContentLoaded\", start);\n} else {\n    // `DOMContentLoaded` has already fired\n    start();\n}"
+                  },
+                  "inputSchema": {}
                 }
               },
               "position": {
-                "x": 934,
+                "x": 938,
                 "y": 514
               },
               "group": "nodes",
@@ -2066,7 +2069,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1384,
+                "x": 1388,
                 "y": 514
               },
               "group": "nodes",
@@ -2102,7 +2105,7 @@
                 }
               },
               "position": {
-                "x": 3060,
+                "x": 3064,
                 "y": 2850
               },
               "group": "nodes",
@@ -2148,7 +2151,7 @@
                 "idUnique": "30gdqzg51v"
               },
               "position": {
-                "x": 2464,
+                "x": 2468,
                 "y": 844
               },
               "group": "nodes",
@@ -2195,7 +2198,7 @@
                 "idUnique": "1zv746jsvx"
               },
               "position": {
-                "x": 2760,
+                "x": 2764,
                 "y": 2850
               },
               "group": "nodes",
@@ -2213,7 +2216,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2880,
+                "x": 2884,
                 "y": 2850
               },
               "group": "nodes",
@@ -2269,7 +2272,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1474,
+                "x": 1478,
                 "y": 754
               },
               "group": "nodes",
@@ -2325,7 +2328,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1474,
+                "x": 1478,
                 "y": 574
               },
               "group": "nodes",
@@ -2381,7 +2384,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1474,
+                "x": 1478,
                 "y": 964
               },
               "group": "nodes",
@@ -2437,7 +2440,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 3094,
+                "x": 3098,
                 "y": 424
               },
               "group": "nodes",
@@ -2494,7 +2497,7 @@
                 "idUnique": "87z3lvz19s"
               },
               "position": {
-                "x": 2344,
+                "x": 2348,
                 "y": 754
               },
               "group": "nodes",
@@ -2550,7 +2553,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 2914,
+                "x": 2918,
                 "y": 574
               },
               "group": "nodes",
@@ -2606,7 +2609,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 2914,
+                "x": 2918,
                 "y": 964
               },
               "group": "nodes",
@@ -2663,7 +2666,7 @@
                 "idUnique": "nh9w4wlipg"
               },
               "position": {
-                "x": 3094,
+                "x": 3098,
                 "y": 754
               },
               "group": "nodes",
@@ -2720,7 +2723,7 @@
                 "idUnique": "148a9scljd"
               },
               "position": {
-                "x": 1384,
+                "x": 1388,
                 "y": 1294
               },
               "group": "nodes",
@@ -2771,7 +2774,7 @@
                 "idUnique": "p0q8ndmupg"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 1774
               },
               "group": "nodes",
@@ -2821,7 +2824,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 2554
               },
               "group": "nodes",
@@ -2871,7 +2874,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 3544
               },
               "group": "nodes",
@@ -2928,7 +2931,7 @@
                 "idUnique": "xefq4liuut"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 3604
               },
               "group": "nodes",
@@ -2974,7 +2977,7 @@
                 "idUnique": "00surhcg33"
               },
               "position": {
-                "x": 634,
+                "x": 638,
                 "y": 3784
               },
               "group": "nodes",
@@ -3024,7 +3027,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 214
               },
               "group": "nodes",
@@ -3077,7 +3080,7 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 1234,
+                "x": 1238,
                 "y": 514
               },
               "group": "nodes",
@@ -3095,7 +3098,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1054,
+                "x": 1058,
                 "y": 514
               },
               "group": "nodes",
@@ -3182,7 +3185,7 @@
                 "idUnique": "a99irgrtx7"
               },
               "position": {
-                "x": 334,
+                "x": 338,
                 "y": 514
               },
               "group": "nodes",
@@ -3238,7 +3241,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 214,
+                "x": 218,
                 "y": 394
               },
               "group": "nodes",
@@ -3271,7 +3274,7 @@
                 }
               },
               "position": {
-                "x": 634,
+                "x": 638,
                 "y": 334
               },
               "group": "nodes",
@@ -3289,7 +3292,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 754,
+                "x": 758,
                 "y": 334
               },
               "group": "nodes",
@@ -3307,7 +3310,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1384,
+                "x": 1388,
                 "y": 664
               },
               "group": "nodes",
@@ -3363,7 +3366,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 514,
+                "x": 518,
                 "y": 3664
               },
               "group": "nodes",
@@ -3382,7 +3385,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 454,
+                "x": 458,
                 "y": 514
               },
               "group": "nodes",
@@ -3430,7 +3433,7 @@
                 }
               },
               "position": {
-                "x": 634,
+                "x": 638,
                 "y": 514
               },
               "group": "nodes",
@@ -3456,7 +3459,7 @@
                 }
               },
               "position": {
-                "x": 754,
+                "x": 758,
                 "y": 514
               },
               "group": "nodes",
@@ -3505,7 +3508,7 @@
                 "idUnique": "3nm07rhtek"
               },
               "position": {
-                "x": 934,
+                "x": 938,
                 "y": 844
               },
               "group": "nodes",
@@ -3562,7 +3565,7 @@
                 "idUnique": "lxzpplo8t5"
               },
               "position": {
-                "x": 814,
+                "x": 818,
                 "y": 754
               },
               "group": "nodes",
@@ -3598,7 +3601,7 @@
                 }
               },
               "position": {
-                "x": 3394,
+                "x": 3398,
                 "y": 1954
               },
               "group": "nodes",
@@ -3654,7 +3657,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 3184,
+                "x": 3188,
                 "y": 1834
               },
               "group": "nodes",
@@ -3706,7 +3709,7 @@
                 "idUnique": "qdjikxg105"
               },
               "position": {
-                "x": 1864,
+                "x": 1868,
                 "y": 514
               },
               "group": "nodes",
@@ -3732,7 +3735,7 @@
                 }
               },
               "position": {
-                "x": 1984,
+                "x": 1988,
                 "y": 514
               },
               "group": "nodes",
@@ -3755,7 +3758,7 @@
                 }
               },
               "position": {
-                "x": 2284,
+                "x": 2288,
                 "y": 514
               },
               "group": "nodes",
@@ -3778,7 +3781,7 @@
                 }
               },
               "position": {
-                "x": 2580,
+                "x": 2584,
                 "y": 2850
               },
               "group": "nodes",
@@ -3826,7 +3829,7 @@
                 }
               },
               "position": {
-                "x": 2760,
+                "x": 2764,
                 "y": 3090
               },
               "group": "nodes",
@@ -3897,9 +3900,11 @@
                   "customHTML": {
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"<div\\n  class=\\\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0\\\">\\n  <div style=\\\"max-width: 400px; width: 100%\\\">\\n    <div class=\\\"card shadow mb-5\\\">\\n      <div class=\\\"card-body p-5 d-flex flex-column\\\">\\n        <img class=\\\"companyLogo align-self-center mb-5\\\" alt=\\\"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"companyName\",\n        \"data\": \"{{global.variables.companyName}}\",\n        \"tooltip\": \"{{global.variables.companyName}}\",\n        \"children\": [\n          {\n            \"text\": \"{{global.variables.companyName}}\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\\\" />\\n        <h1 id=\\\"header\\\" class=\\\"text-center mb-4\\\">Create Your Profile</h1>\\n        <p id=\\\"feedback\\\" data-id=\\\"feedback\\\" class=\\\"text-danger mdi mdi-alert-circle\\\" data-skcomponent=\\\"skerror\\\"></p>\\n        <form id=\\\"registrationForm\\\" data-id=\\\"registrationForm\\\" class=\\\"form\\\">\\n          <div class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"email\\\" data-id=\\\"email\\\" class=\\\"form-control\\\" type=\\\"text\\\" name=\\\"email\\\" placeholder=\\\"Email Address\\\" autocomplete=\\\"off\\\" />\\n            <label id=\\\"emailLabel\\\" data-id=\\\"emailLabel\\\" class=\\\"form-label\\\" for=\\\"email\\\">Email Address</label>\\n          </div>\\n          <div class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"firstName\\\" data-id=\\\"firstName\\\" class=\\\"form-control\\\" type=\\\"text\\\" name=\\\"firstName\\\" placeholder=\\\"First Name\\\" autocomplete=\\\"off\\\" />\\n            <label id=\\\"firstNameLabel\\\" data-id=\\\"firstNameLabel\\\" class=\\\"form-label\\\" for=\\\"firstName\\\">First Name</label>\\n          </div>\\n          <div class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"lastName\\\" data-id=\\\"lastName\\\" class=\\\"form-control\\\" type=\\\"text\\\" placeholder=\\\"Last Name\\\" autocomplete=\\\"off\\\" name=\\\"lastName\\\" />\\n            <label id=\\\"lastNameLabel\\\" data-id=\\\"lastNameLabel\\\" class=\\\"form-label\\\" for=\\\"lastName\\\">Last Name</label>\\n          </div>\\n          <div id=\\\"passwordContainer\\\" class=\\\"mb-4 form-floating\\\">\\n            <input id=\\\"password\\\" data-id=\\\"password\\\" class=\\\"form-control\\\" type=\\\"password\\\" placeholder=\\\"Password\\\" autocomplete=\\\"off\\\" name=\\\"password\\\" />\\n            <label id=\\\"passwordLabel\\\" data-id=\\\"passwordLabel\\\" class=\\\"form-label\\\" for=\\\"password\\\">Password</label>\\n          </div>\\n          <div class=\\\"d-flex flex-column\\\">\\n            <button id=\\\"submitBtn\\\" data-id=\\\"submitBtn\\\" class=\\\"btn btn-primary mb-3\\\" type=\\\"submit\\\" data-skcomponent=\\\"skbutton\\\" \\n              data-skbuttontype=\\\"form-submit\\\" data-skform=\\\"registrationForm\\\" data-skbuttonvalue=\\\"REGISTER\\\">\\n                Save\\n              </button>\\n            <button id=\\\"cancelBtn\\\" data-id=\\\"cancelBtn\\\" class=\\\"btn btn-link\\\" type=\\\"submit\\\" data-skcomponent=\\\"skbutton\\\"\\n              data-skbuttontype=\\\"next-event\\\" data-skform=\\\"registrationForm\\\" data-skbuttonvalue=\\\"SIGNON\\\">\\n                Already have an account? Sign on\\n            </button>\\n          </div>\\n        </form>\\n      </div>\\n    </div>\\n  </div>\\n</div>\"\n      }\n    ]\n  }\n]"
                   },
-                  "customCSS": {},
+                  "customCSS": {
+                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
+                  },
                   "customScript": {
-                    "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"email\").focus();\r\n};\r\n\r\n/**\r\n * If page isn't loaded yet, wait for the page to load, then focus on first\r\n * input element.\r\n */\r\nif (document.readyState === \"loading\") {\r\n  // Loading hasn't finished yet\r\n  document.addEventListener(\"DOMContentLoaded\", focusOnFirstInputElement);\r\n} else {\r\n  // `DOMContentLoaded` has already fired\r\n  focusOnFirstInputElement();\r\n}\r\n"
+                    "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"email\").focus();\r\n};\r\n\r\nfunction makePasswordToggle(id) {\r\n    var container = document.getElementById(id);\r\n    var password = container.getElementsByTagName(\"input\")[0];\r\n    var toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    function showHidePassword() {\r\n        if (password.type == \"password\") {\r\n            password.setAttribute(\"type\", \"text\");\r\n            toggler.classList.add(\"mdi-eye-outline\");\r\n            toggler.classList.remove(\"mdi-eye-off-outline\");\r\n        } else {\r\n            toggler.classList.add(\"mdi-eye-off-outline\");\r\n            toggler.classList.remove(\"mdi-eye-outline\");\r\n            password.setAttribute(\"type\", \"password\");\r\n        }\r\n        password.focus();\r\n    };\r\n\r\n    toggler.addEventListener(\"click\", showHidePassword);\r\n}\r\n\r\nfunction start() {\r\n    makePasswordToggle(\"passwordContainer\");\r\n    focusOnFirstInputElement();\r\n}\r\n\r\nif (document.readyState === \"loading\") {\r\n    // Loading hasn't finished yet\r\n    document.addEventListener(\"DOMContentLoaded\", start);\r\n} else {\r\n    // `DOMContentLoaded` has already fired\r\n    start();\r\n}"
                   },
                   "validationRules": {
                     "value": []
@@ -3910,7 +3915,7 @@
                 }
               },
               "position": {
-                "x": 630,
+                "x": 634,
                 "y": 2850
               },
               "group": "nodes",
@@ -3975,7 +3980,7 @@
                 }
               },
               "position": {
-                "x": 1560,
+                "x": 1564,
                 "y": 2850
               },
               "group": "nodes",
@@ -4014,7 +4019,7 @@
                 }
               },
               "position": {
-                "x": 2460,
+                "x": 2464,
                 "y": 2850
               },
               "group": "nodes",
@@ -4062,7 +4067,7 @@
                 }
               },
               "position": {
-                "x": 1560,
+                "x": 1564,
                 "y": 3090
               },
               "group": "nodes",
@@ -4086,7 +4091,7 @@
                 }
               },
               "position": {
-                "x": 1350,
+                "x": 1354,
                 "y": 2850
               },
               "group": "nodes",
@@ -4104,7 +4109,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1050,
+                "x": 1054,
                 "y": 2850
               },
               "group": "nodes",
@@ -4122,7 +4127,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1050,
+                "x": 1054,
                 "y": 3300
               },
               "group": "nodes",
@@ -4140,7 +4145,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 750,
+                "x": 754,
                 "y": 2850
               },
               "group": "nodes",
@@ -4192,7 +4197,7 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 930,
+                "x": 934,
                 "y": 2850
               },
               "group": "nodes",
@@ -4255,7 +4260,7 @@
                 }
               },
               "position": {
-                "x": 1230,
+                "x": 1234,
                 "y": 2850
               },
               "group": "nodes",
@@ -4274,7 +4279,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1050,
+                "x": 1054,
                 "y": 3090
               },
               "group": "nodes",
@@ -4310,7 +4315,7 @@
                 }
               },
               "position": {
-                "x": 1230,
+                "x": 1234,
                 "y": 3090
               },
               "group": "nodes",
@@ -4328,7 +4333,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1680,
+                "x": 1684,
                 "y": 2850
               },
               "group": "nodes",
@@ -4384,7 +4389,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1080,
+                "x": 1084,
                 "y": 2970
               },
               "group": "nodes",
@@ -4440,7 +4445,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1110,
+                "x": 1114,
                 "y": 3210
               },
               "group": "nodes",
@@ -4496,7 +4501,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1440,
+                "x": 1444,
                 "y": 2970
               },
               "group": "nodes",
@@ -4552,7 +4557,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 2850,
+                "x": 2854,
                 "y": 2730
               },
               "group": "nodes",
@@ -4608,7 +4613,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 2640,
+                "x": 2644,
                 "y": 2970
               },
               "group": "nodes",
@@ -4665,7 +4670,7 @@
                 "idUnique": "940rm8qjb1"
               },
               "position": {
-                "x": 210,
+                "x": 214,
                 "y": 2610
               },
               "group": "nodes",
@@ -4722,7 +4727,7 @@
                 "idUnique": "2gvzt6c9xh"
               },
               "position": {
-                "x": 510,
+                "x": 514,
                 "y": 2730
               },
               "group": "nodes",
@@ -4778,7 +4783,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1110,
+                "x": 1114,
                 "y": 2730
               },
               "group": "nodes",
@@ -4826,7 +4831,7 @@
                 }
               },
               "position": {
-                "x": 1860,
+                "x": 1864,
                 "y": 2850
               },
               "group": "nodes",
@@ -4844,7 +4849,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1980,
+                "x": 1984,
                 "y": 2850
               },
               "group": "nodes",
@@ -4863,7 +4868,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1980,
+                "x": 1984,
                 "y": 3090
               },
               "group": "nodes",
@@ -4896,7 +4901,7 @@
                 }
               },
               "position": {
-                "x": 2160,
+                "x": 2164,
                 "y": 3090
               },
               "group": "nodes",
@@ -4929,7 +4934,7 @@
                 }
               },
               "position": {
-                "x": 1230,
+                "x": 1234,
                 "y": 2670
               },
               "group": "nodes",
@@ -4947,7 +4952,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1350,
+                "x": 1354,
                 "y": 2670
               },
               "group": "nodes",
@@ -4966,7 +4971,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 2280,
+                "x": 2284,
                 "y": 3090
               },
               "group": "nodes",
@@ -5002,7 +5007,7 @@
                 }
               },
               "position": {
-                "x": 2460,
+                "x": 2464,
                 "y": 3090
               },
               "group": "nodes",
@@ -5020,7 +5025,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1980,
+                "x": 1984,
                 "y": 3300
               },
               "group": "nodes",
@@ -5076,7 +5081,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 2040,
+                "x": 2044,
                 "y": 3210
               },
               "group": "nodes",
@@ -5133,7 +5138,7 @@
                 "idUnique": "0qrhi9meoi"
               },
               "position": {
-                "x": 2040,
+                "x": 2044,
                 "y": 2970
               },
               "group": "nodes",
@@ -5180,7 +5185,7 @@
                 "idUnique": "ieb00yvk0b"
               },
               "position": {
-                "x": 1564,
+                "x": 1568,
                 "y": 1954
               },
               "group": "nodes",
@@ -5239,11 +5244,13 @@
                     "value": "Forgot password recovery code form"
                   },
                   "customHTML": {
-                    "value": "<div\n  class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n  <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n    <div class=\"card shadow mb-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n        <h1 id=\"header\" class=\"text-center mb-4\">Enter New Password</h1>\n        <p class=\"text-muted text-center\">\n          If you have an active account with a valid email address, you will\n          receive an email with a recovery code which you may enter here, along\n          with a new password.\n        </p>\n        <p class=\"text-muted text-center\">\n          If you do not have an account or email, please contact your\n          administrator to recover your password.\n        </p>\n        <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n        <form id=\"recoveryCodeForm\" data-id=\"recoveryCodeForm\">\n          <div class=\"mb-4 form-floating\">\n            <input id=\"recoveryCode\" data-id=\"recoveryCode\" class=\"form-control\" type=\"text\" name=\"recoveryCode\"\n              placeholder=\"Recovery Code\" autocomplete=\"on\" value=\"\"/>\n            <label id=\"recoveryCodeLabel\" data-id=\"recoveryCodeLabel\" class=\"form-label\" for=\"recoveryCode\">\n              Recovery Code\n            </label>\n          </div>\n          <div class=\"mb-4 form-floating\">\n            <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\" name=\"newPassword\"\n              placeholder=\"New Password\" autocomplete=\"on\" value=\"\" />\n            <label id=\"newPasswordLabel\" data-id=\"newPasswordLabel\" class=\"form-label\" for=\"newPassword\" >\n              New Password\n            </label>\n          </div>\n          <div class=\"d-flex flex-column\">\n            <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"form-submit\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"SUBMIT\" >\n              Submit\n            </button>\n            <button id=\"cancelBtn\" data-id=\"cancelBtn\" class=\"btn btn-link\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"next-event\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"CANCEL\">\n              Cancel\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
+                    "value": "<div\n  class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n  <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n    <div class=\"card shadow mb-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n        <h1 id=\"header\" class=\"text-center mb-4\">Enter New Password</h1>\n        <p class=\"text-muted text-center\">\n          If you have an active account with a valid email address, you will\n          receive an email with a recovery code which you may enter here, along\n          with a new password.\n        </p>\n        <p class=\"text-muted text-center\">\n          If you do not have an account or email, please contact your\n          administrator to recover your password.\n        </p>\n        <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n        <form id=\"recoveryCodeForm\" data-id=\"recoveryCodeForm\">\n          <div class=\"mb-4 form-floating\">\n            <input id=\"recoveryCode\" data-id=\"recoveryCode\" class=\"form-control\" type=\"text\" name=\"recoveryCode\"\n              placeholder=\"Recovery Code\" autocomplete=\"on\" value=\"\"/>\n            <label id=\"recoveryCodeLabel\" data-id=\"recoveryCodeLabel\" class=\"form-label\" for=\"recoveryCode\">\n              Recovery Code\n            </label>\n          </div>\n          <div id=\"newPasswordContainer\" class=\"mb-4 form-floating\">\n            <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\" name=\"newPassword\"\n              placeholder=\"New Password\" autocomplete=\"on\" value=\"\" />\n            <label id=\"newPasswordLabel\" data-id=\"newPasswordLabel\" class=\"form-label\" for=\"newPassword\" >\n              New Password\n            </label>\n          </div>\n          <div class=\"d-flex flex-column\">\n            <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"form-submit\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"SUBMIT\" >\n              Submit\n            </button>\n            <button id=\"cancelBtn\" data-id=\"cancelBtn\" class=\"btn btn-link\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"next-event\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"CANCEL\">\n              Cancel\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
                   },
-                  "customCSS": {},
+                  "customCSS": {
+                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
+                  },
                   "customScript": {
-                    "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"recoveryCode\").focus();\r\n};\r\n\r\n/**\r\n * If page isn't loaded yet, wait for the page to load, then focus on first\r\n * input element.\r\n */\r\nif (document.readyState === \"loading\") {\r\n  // Loading hasn't finished yet\r\n  document.onreadystatechange = () => {\r\n    if (document.readyState === \"complete\") {\r\n      focusOnFirstInputElement();\r\n    }\r\n  };\r\n} else {\r\n  // `DOMContentLoaded` has already fired\r\n  focusOnFirstInputElement();\r\n}\r\n"
+                    "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"recoveryCode\").focus();\r\n};\r\n\r\nfunction makePasswordToggle(id) {\r\n    var container = document.getElementById(id);\r\n    var password = container.getElementsByTagName(\"input\")[0];\r\n    var toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    function showHidePassword() {\r\n        if (password.type == \"password\") {\r\n            password.setAttribute(\"type\", \"text\");\r\n            toggler.classList.add(\"mdi-eye-outline\");\r\n            toggler.classList.remove(\"mdi-eye-off-outline\");\r\n        } else {\r\n            toggler.classList.add(\"mdi-eye-off-outline\");\r\n            toggler.classList.remove(\"mdi-eye-outline\");\r\n            password.setAttribute(\"type\", \"password\");\r\n        }\r\n        password.focus();\r\n    };\r\n\r\n    toggler.addEventListener(\"click\", showHidePassword);\r\n}\r\n\r\nfunction start() {\r\n    makePasswordToggle(\"newPasswordContainer\");\r\n    focusOnFirstInputElement();\r\n}\r\n\r\nif (document.readyState === \"loading\") {\r\n    // Loading hasn't finished yet\r\n    document.addEventListener(\"DOMContentLoaded\", start);\r\n} else {\r\n    // `DOMContentLoaded` has already fired\r\n    start();\r\n}"
                   },
                   "validationRules": {
                     "value": []
@@ -5255,7 +5262,7 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 1864,
+                "x": 1868,
                 "y": 1954
               },
               "group": "nodes",
@@ -5281,7 +5288,7 @@
                 }
               },
               "position": {
-                "x": 1684,
+                "x": 1688,
                 "y": 1954
               },
               "group": "nodes",
@@ -5334,7 +5341,7 @@
                 "idUnique": "012d2dxhji"
               },
               "position": {
-                "x": 2764,
+                "x": 2768,
                 "y": 1954
               },
               "group": "nodes",
@@ -5360,7 +5367,7 @@
                 }
               },
               "position": {
-                "x": 2884,
+                "x": 2888,
                 "y": 1954
               },
               "group": "nodes",
@@ -5429,7 +5436,7 @@
                 }
               },
               "position": {
-                "x": 634,
+                "x": 638,
                 "y": 1954
               },
               "group": "nodes",
@@ -5468,7 +5475,7 @@
                 "idUnique": "0crkg5a1qc"
               },
               "position": {
-                "x": 1234,
+                "x": 1238,
                 "y": 1954
               },
               "group": "nodes",
@@ -5494,7 +5501,7 @@
                 }
               },
               "position": {
-                "x": 1384,
+                "x": 1388,
                 "y": 1954
               },
               "group": "nodes",
@@ -5546,7 +5553,7 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 934,
+                "x": 938,
                 "y": 1954
               },
               "group": "nodes",
@@ -5592,7 +5599,7 @@
                 "idUnique": "upt2qd07bj"
               },
               "position": {
-                "x": 1234,
+                "x": 1238,
                 "y": 2344
               },
               "group": "nodes",
@@ -5610,7 +5617,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1054,
+                "x": 1058,
                 "y": 2344
               },
               "group": "nodes",
@@ -5628,7 +5635,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 754,
+                "x": 758,
                 "y": 1954
               },
               "group": "nodes",
@@ -5651,7 +5658,7 @@
                 }
               },
               "position": {
-                "x": 1054,
+                "x": 1058,
                 "y": 1954
               },
               "group": "nodes",
@@ -5670,7 +5677,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1054,
+                "x": 1058,
                 "y": 2194
               },
               "group": "nodes",
@@ -5706,7 +5713,7 @@
                 }
               },
               "position": {
-                "x": 1234,
+                "x": 1238,
                 "y": 2194
               },
               "group": "nodes",
@@ -5729,7 +5736,7 @@
                 }
               },
               "position": {
-                "x": 1984,
+                "x": 1988,
                 "y": 1954
               },
               "group": "nodes",
@@ -5775,7 +5782,7 @@
                 "idUnique": "26waerzp56"
               },
               "position": {
-                "x": 3064,
+                "x": 3068,
                 "y": 2194
               },
               "group": "nodes",
@@ -5804,7 +5811,7 @@
                 }
               },
               "position": {
-                "x": 2584,
+                "x": 2588,
                 "y": 1954
               },
               "group": "nodes",
@@ -5860,7 +5867,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1114,
+                "x": 1118,
                 "y": 1834
               },
               "group": "nodes",
@@ -5916,7 +5923,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 2944,
+                "x": 2948,
                 "y": 1834
               },
               "group": "nodes",
@@ -5972,7 +5979,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 2944,
+                "x": 2948,
                 "y": 2104
               },
               "group": "nodes",
@@ -6028,7 +6035,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1114,
+                "x": 1118,
                 "y": 2254
               },
               "group": "nodes",
@@ -6085,7 +6092,7 @@
                 "idUnique": "wivzkzcybt"
               },
               "position": {
-                "x": 1114,
+                "x": 1118,
                 "y": 2104
               },
               "group": "nodes",
@@ -6130,7 +6137,7 @@
                 }
               },
               "position": {
-                "x": 3064,
+                "x": 3068,
                 "y": 1954
               },
               "group": "nodes",
@@ -6148,7 +6155,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3184,
+                "x": 3188,
                 "y": 1954
               },
               "group": "nodes",
@@ -6197,7 +6204,7 @@
                 "idUnique": "2tsam5hkvw"
               },
               "position": {
-                "x": 2464,
+                "x": 2468,
                 "y": 1954
               },
               "group": "nodes",
@@ -6250,7 +6257,7 @@
                 "idUnique": "j0002duy8j"
               },
               "position": {
-                "x": 2164,
+                "x": 2168,
                 "y": 1954
               },
               "group": "nodes",
@@ -6268,7 +6275,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2314,
+                "x": 2318,
                 "y": 1954
               },
               "group": "nodes",
@@ -6287,7 +6294,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 2314,
+                "x": 2318,
                 "y": 2194
               },
               "group": "nodes",
@@ -6323,7 +6330,7 @@
                 }
               },
               "position": {
-                "x": 2464,
+                "x": 2468,
                 "y": 2194
               },
               "group": "nodes",
@@ -6380,7 +6387,7 @@
                 "idUnique": "wivzkzcybt"
               },
               "position": {
-                "x": 2344,
+                "x": 2348,
                 "y": 2104
               },
               "group": "nodes",
@@ -6429,7 +6436,7 @@
                 "idUnique": "z6ixjf40a0"
               },
               "position": {
-                "x": 1230,
+                "x": 1234,
                 "y": 3300
               },
               "group": "nodes",
@@ -6478,7 +6485,7 @@
                 "idUnique": "ypoiakk0cd"
               },
               "position": {
-                "x": 2160,
+                "x": 2164,
                 "y": 3300
               },
               "group": "nodes",
@@ -6503,7 +6510,7 @@
                 "type": "trigger",
                 "properties": {
                   "customHTML": {
-                    "value": "<div\n  class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n  <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n    <div class=\"card shadow mb-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n        <h1 id=\"header\" class=\"text-center mb-4\">Change Password</h1>\n        <p class=\"text-muted text-center\">\n          Your password must be changed. Please create a new one.\n        </p>\n        <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n        <form id=\"resetPasswordForm\" data-id=\"resetPasswordForm\">\n          <div class=\"mb-4 form-floating\">\n            <input id=\"currentPassword\" data-id=\"currentPassword\" class=\"form-control\" type=\"password\"\n              name=\"currentPassword\" placeholder=\"Current Password\" autocomplete=\"off\" value=\"\" />\n            <label class=\"form-label\" for=\"email\">Current Password</label>\n          </div>\n          <div class=\"mb-4 form-floating\">\n            <input\n              id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\"\n              name=\"newPassword\" placeholder=\"New Password\" autocomplete=\"off\" value=\"\" />\n            <label class=\"form-label\" for=\"email\">New Password</label>\n          </div>\n          <div class=\"d-flex flex-column\">\n            <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" type=\"submit\"\n              data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" data-skform=\"resetPasswordForm\" data-skbuttonvalue=\"SUBMIT\">\n              Submit\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
+                    "value": "<div\n  class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n  <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n    <div class=\"card shadow mb-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n        <h1 id=\"header\" class=\"text-center mb-4\">Change Password</h1>\n        <p class=\"text-muted text-center\">\n          Your password must be changed. Please create a new one.\n        </p>\n        <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n        <form id=\"resetPasswordForm\" data-id=\"resetPasswordForm\">\n          <div id=\"currentPasswordContainer\" class=\"mb-4 form-floating\">\n            <input id=\"currentPassword\" data-id=\"currentPassword\" class=\"form-control\" type=\"password\"\n              name=\"currentPassword\" placeholder=\"Current Password\" autocomplete=\"off\" value=\"\" />\n            <label class=\"form-label\" for=\"email\">Current Password</label>\n          </div>\n          <div id=\"newPasswordContainer\" class=\"mb-4 form-floating\">\n            <input\n              id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\"\n              name=\"newPassword\" placeholder=\"New Password\" autocomplete=\"off\" value=\"\" />\n            <label class=\"form-label\" for=\"email\">New Password</label>\n          </div>\n          <div class=\"d-flex flex-column\">\n            <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" type=\"submit\"\n              data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" data-skform=\"resetPasswordForm\" data-skbuttonvalue=\"SUBMIT\">\n              Submit\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
                   },
                   "formFieldsList": {
                     "value": [
@@ -6531,9 +6538,11 @@
                   "nodeTitle": {
                     "value": "Display password reset form"
                   },
-                  "customCSS": {},
+                  "customCSS": {
+                    "value": "@import url(\"https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css\")"
+                  },
                   "customScript": {
-                    "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"currentPassword\").focus();\r\n};\r\n\r\n/**\r\n * If page isn't loaded yet, wait for the page to load, then focus on first\r\n * input element.\r\n */\r\nif (document.readyState === \"loading\") {\r\n  // Loading hasn't finished yet\r\n  document.onreadystatechange = () => {\r\n    if (document.readyState === \"complete\") {\r\n      focusOnFirstInputElement();\r\n    }\r\n  };\r\n} else {\r\n  // `DOMContentLoaded` has already fired\r\n  focusOnFirstInputElement();\r\n}\r\n"
+                    "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"currentPassword\").focus();\r\n};\r\n\r\nfunction makePasswordToggle(id) {\r\n    var container = document.getElementById(id);\r\n    var password = container.getElementsByTagName(\"input\")[0];\r\n    var toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    function showHidePassword() {\r\n        if (password.type == \"password\") {\r\n            password.setAttribute(\"type\", \"text\");\r\n            toggler.classList.add(\"mdi-eye-outline\");\r\n            toggler.classList.remove(\"mdi-eye-off-outline\");\r\n        } else {\r\n            toggler.classList.add(\"mdi-eye-off-outline\");\r\n            toggler.classList.remove(\"mdi-eye-outline\");\r\n            password.setAttribute(\"type\", \"password\");\r\n        }\r\n        password.focus();\r\n    };\r\n\r\n    toggler.addEventListener(\"click\", showHidePassword);\r\n}\r\n\r\nfunction start() {\r\n    makePasswordToggle(\"currentPasswordContainer\");\r\n    makePasswordToggle(\"newPasswordContainer\");\r\n    focusOnFirstInputElement()\r\n}\r\n\r\nif (document.readyState === \"loading\") {\r\n    // Loading hasn't finished yet\r\n    document.addEventListener(\"DOMContentLoaded\", start);\r\n} else {\r\n    // `DOMContentLoaded` has already fired\r\n    start();\r\n}\r\n"
                   },
                   "validationRules": {
                     "value": []
@@ -6544,7 +6553,7 @@
                 }
               },
               "position": {
-                "x": 634,
+                "x": 638,
                 "y": 1384
               },
               "group": "nodes",
@@ -6563,7 +6572,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 754,
+                "x": 758,
                 "y": 1384
               },
               "group": "nodes",
@@ -6605,7 +6614,7 @@
                 }
               },
               "position": {
-                "x": 934,
+                "x": 938,
                 "y": 1384
               },
               "group": "nodes",
@@ -6629,7 +6638,7 @@
                 }
               },
               "position": {
-                "x": 1054,
+                "x": 1058,
                 "y": 1384
               },
               "group": "nodes",
@@ -6677,7 +6686,7 @@
                 }
               },
               "position": {
-                "x": 1234,
+                "x": 1238,
                 "y": 1624
               },
               "group": "nodes",
@@ -6723,7 +6732,7 @@
                 }
               },
               "position": {
-                "x": 1234,
+                "x": 1238,
                 "y": 1384
               },
               "group": "nodes",
@@ -6741,7 +6750,7 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1414,
+                "x": 1418,
                 "y": 1384
               },
               "group": "nodes",
@@ -6797,7 +6806,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1114,
+                "x": 1118,
                 "y": 1534
               },
               "group": "nodes",
@@ -6854,7 +6863,7 @@
                 "idUnique": "twyb3s51b1"
               },
               "position": {
-                "x": 930,
+                "x": 934,
                 "y": 2610
               },
               "group": "nodes",
@@ -8883,7 +8892,7 @@
         }
       },
       "flowColor": "#CACED3",
-      "savedDate": 1678133503730,
+      "savedDate": 1678217872412,
       "variables": [
         {
           "context": "flowInstance",
