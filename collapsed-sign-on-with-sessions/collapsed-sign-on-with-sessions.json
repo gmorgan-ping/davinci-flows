@@ -1123,13 +1123,13 @@
         "httpConnector",
         "variablesConnector"
       ],
-      "createdDate": 1678219732052,
-      "currentVersion": 22,
+      "createdDate": 1678367956859,
+      "currentVersion": 28,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
       "description": "Imported on Tue Mar 07 2023 19:05:20 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Sign On with Registration, Password Reset and Recovery",
-      "publishedVersion": 22,
+      "publishedVersion": 28,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -1137,8 +1137,7 @@
         "debugMode": true,
         "cssLinks": [
           "https://assets.pingone.com/ux/end-user-nano/0.1.0-alpha.0/end-user-nano.css",
-          "https://assets.pingone.com/ux/astro-nano/0.1.0-alpha.4/icons.css",
-          "https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css"
+          "https://assets.pingone.com/ux/astro-nano/0.1.0-alpha.6/icons.css"
         ],
         "useCustomCSS": true,
         "logLevel": 3,
@@ -1149,9 +1148,9 @@
         "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}"
       },
       "trigger": {},
-      "updatedDate": 1678219745265,
+      "updatedDate": 1678367959496,
       "flowId": "4d3dca9fc4161ab2402e1ed17bd96fd1",
-      "versionId": 22,
+      "versionId": 28,
       "graphData": {
         "elements": {
           "nodes": [
@@ -3125,7 +3124,7 @@
                     "value": [
                       {
                         "name": "populationId",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"6b9c231c-6af7-4129-8e0c-c2152f8ba6e3\"\n      }\n    ]\n  }\n]",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]",
                         "key": 0.9673372774789002,
                         "type": "string",
                         "label": "populationId (string - flowInstance)"
@@ -8885,7 +8884,7 @@
         }
       },
       "flowColor": "#CACED3",
-      "savedDate": 1678219731821,
+      "savedDate": 1678367956582,
       "variables": [
         {
           "context": "flowInstance",
