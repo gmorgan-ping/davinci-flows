@@ -1123,13 +1123,13 @@
         "httpConnector",
         "variablesConnector"
       ],
-      "createdDate": 1678380292135,
-      "currentVersion": 33,
+      "createdDate": 1678393483769,
+      "currentVersion": 36,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
       "description": "Imported on Tue Mar 07 2023 19:05:20 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Sign On with Registration, Password Reset and Recovery",
-      "publishedVersion": 33,
+      "publishedVersion": 36,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -1148,9 +1148,9 @@
         "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}"
       },
       "trigger": {},
-      "updatedDate": 1678380295447,
+      "updatedDate": 1678393487605,
       "flowId": "4d3dca9fc4161ab2402e1ed17bd96fd1",
-      "versionId": 33,
+      "versionId": 36,
       "graphData": {
         "elements": {
           "nodes": [
@@ -3134,41 +3134,6 @@
                         "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Ping Identity\"\n      }\n    ]\n  }\n]",
                         "key": 0.8558926100565449,
                         "label": "companyName (string - flowInstance)",
-                        "type": "string"
-                      },
-                      {
-                        "name": "origin",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"auth.pingone.com\"\n      }\n    ]\n  }\n]",
-                        "key": 0.38383064124643007,
-                        "label": "origin (string - flowInstance)",
-                        "type": "string"
-                      },
-                      {
-                        "name": "originURL",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"https://auth.pingone.com\"\n      }\n    ]\n  }\n]",
-                        "key": 0.3895964400152929,
-                        "label": "originURL (string - flowInstance)",
-                        "type": "string"
-                      },
-                      {
-                        "name": "relyingParty",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"PingOne\"\n      }\n    ]\n  }\n]",
-                        "key": 0.8294031869442895,
-                        "label": "relyingParty (string - flowInstance)",
-                        "type": "string"
-                      },
-                      {
-                        "name": "relyingPartyId",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"auth.pingone.com\"\n      }\n    ]\n  }\n]",
-                        "key": 0.33706413004714153,
-                        "label": "relyingPartyId (string - flowInstance)",
-                        "type": "string"
-                      },
-                      {
-                        "name": "flowDocsURL",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]",
-                        "key": 0.8153538352277487,
-                        "label": "flowDocsURL (string - flowInstance)",
                         "type": "string"
                       }
                     ]
@@ -8874,7 +8839,7 @@
         }
       },
       "flowColor": "#CACED3",
-      "savedDate": 1678380291879,
+      "savedDate": 1678393483486,
       "variables": [
         {
           "context": "flowInstance",
@@ -8905,66 +8870,6 @@
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1678115982658,
-          "fields": {
-            "type": "string",
-            "displayName": "FIDO2 origin",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "type": "property",
-          "visibility": "private",
-          "name": "origin##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1678115982656,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "type": "property",
-          "visibility": "private",
-          "name": "originURL##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1678115982658,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "type": "property",
-          "visibility": "private",
-          "name": "relyingParty##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1678115982658,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "type": "property",
-          "visibility": "private",
-          "name": "flowDocsURL##SK##flowInstance",
           "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
         }
       ]
