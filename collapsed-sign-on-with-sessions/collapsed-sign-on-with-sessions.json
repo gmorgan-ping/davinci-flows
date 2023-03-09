@@ -1123,13 +1123,13 @@
         "httpConnector",
         "variablesConnector"
       ],
-      "createdDate": 1678367956859,
-      "currentVersion": 28,
+      "createdDate": 1678380292135,
+      "currentVersion": 33,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
       "description": "Imported on Tue Mar 07 2023 19:05:20 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Sign On with Registration, Password Reset and Recovery",
-      "publishedVersion": 28,
+      "publishedVersion": 33,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -1148,9 +1148,9 @@
         "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}"
       },
       "trigger": {},
-      "updatedDate": 1678367959496,
+      "updatedDate": 1678380295447,
       "flowId": "4d3dca9fc4161ab2402e1ed17bd96fd1",
-      "versionId": 28,
+      "versionId": 33,
       "graphData": {
         "elements": {
           "nodes": [
@@ -5412,17 +5412,7 @@
                     "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"username\").focus();\r\n};\r\n\r\n/**\r\n * If page isn't loaded yet, wait for the page to load, then focus on first\r\n * input element.\r\n */\r\nif (document.readyState === \"loading\") {\r\n  // Loading hasn't finished yet\r\n  document.onreadystatechange = () => {\r\n    if (document.readyState === \"complete\") {\r\n      focusOnFirstInputElement();\r\n    }\r\n  };\r\n} else {\r\n  // `DOMContentLoaded` has already fired\r\n  focusOnFirstInputElement();\r\n}\r\n"
                   },
                   "validationRules": {
-                    "value": [
-                      {
-                        "propertyName": "username",
-                        "rules": [
-                          {
-                            "ruleName": "presence",
-                            "message": "Please enter your username"
-                          }
-                        ]
-                      }
-                    ]
+                    "value": []
                   },
                   "nodeDescription": {
                     "value": "A form for the user to submit the username of the account they forgot the password to"
@@ -8884,7 +8874,7 @@
         }
       },
       "flowColor": "#CACED3",
-      "savedDate": 1678367956582,
+      "savedDate": 1678380291879,
       "variables": [
         {
           "context": "flowInstance",
