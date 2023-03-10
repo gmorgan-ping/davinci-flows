@@ -6,17 +6,16 @@
       "connectorIds": [
         "annotationConnector",
         "flowConnector",
-        "variablesConnector",
         "pingOneAuthenticationConnector",
         "nodeConnector"
       ],
-      "createdDate": 1678218251051,
-      "currentVersion": 2,
+      "createdDate": 1678448717036,
+      "currentVersion": 3,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
       "description": "Imported on Tue Mar 07 2023 19:05:21 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Session Main Flow ",
-      "publishedVersion": 1,
+      "publishedVersion": 3,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -37,9 +36,9 @@
       "trigger": {
         "type": "AUTHENTICATION"
       },
-      "updatedDate": 1678218251061,
+      "updatedDate": 1678448718581,
       "flowId": "1a6a32207dbef6d2f0a9d335b79a583f",
-      "versionId": 2,
+      "versionId": 3,
       "graphData": {
         "elements": {
           "nodes": [
@@ -87,64 +86,8 @@
                 "status": "configured"
               },
               "position": {
-                "x": 814,
+                "x": 540,
                 "y": 540
-              },
-              "group": "nodes",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": false,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "hofri0lqnx",
-                "nodeType": "ANNOTATION",
-                "name": "Annotation",
-                "connectionId": "921bfae85c38ed45045e07be703d86b8",
-                "connectorId": "annotationConnector",
-                "capabilityName": "updateAnnotationProperties",
-                "type": "action",
-                "properties": {
-                  "backgroundColor": {
-                    "value": "#f2f3f4ff"
-                  },
-                  "annotationTextColor": {
-                    "value": "#000000"
-                  },
-                  "annotation": {
-                    "value": "Initialize Variables"
-                  },
-                  "width": {
-                    "value": 240
-                  },
-                  "fontSize": {
-                    "value": 14
-                  },
-                  "fontFamily": {
-                    "value": "sans-serif"
-                  },
-                  "cornerRadius": {
-                    "value": 8
-                  },
-                  "strokeEnabled": {
-                    "value": true
-                  },
-                  "strokeWidth": {
-                    "value": 1
-                  },
-                  "strokeColor": {
-                    "value": "#181818ff"
-                  }
-                },
-                "status": "configured"
-              },
-              "position": {
-                "x": 214,
-                "y": 330
               },
               "group": "nodes",
               "removed": false,
@@ -202,8 +145,8 @@
                 "status": "configured"
               },
               "position": {
-                "x": 758,
-                "y": 904
+                "x": 480,
+                "y": 900
               },
               "group": "nodes",
               "removed": false,
@@ -309,26 +252,8 @@
                 "idUnique": "xefq4liuut"
               },
               "position": {
-                "x": 248,
-                "y": 904
-              },
-              "group": "nodes",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": false,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "ze3omkafya",
-                "nodeType": "EVAL"
-              },
-              "position": {
-                "x": 454,
-                "y": 450
+                "x": 240,
+                "y": 900
               },
               "group": "nodes",
               "removed": false,
@@ -383,7 +308,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 784,
+                "x": 510,
                 "y": 330
               },
               "group": "nodes",
@@ -410,7 +335,7 @@
                 }
               },
               "position": {
-                "x": 784,
+                "x": 510,
                 "y": 450
               },
               "group": "nodes",
@@ -450,53 +375,8 @@
                 "idUnique": "vfcvshnz3c"
               },
               "position": {
-                "x": 934,
+                "x": 660,
                 "y": 630
-              },
-              "group": "nodes",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": false,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "bb45iggzc5",
-                "nodeType": "CONNECTION",
-                "connectionId": "06922a684039827499bdbdd97f49827b",
-                "connectorId": "variablesConnector",
-                "name": "Variables",
-                "label": "Variables",
-                "status": "configured",
-                "capabilityName": "saveValue",
-                "type": "trigger",
-                "properties": {
-                  "saveVariables": {
-                    "value": [
-                      {
-                        "name": "companyName",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Ping Identity\"\n      }\n    ]\n  }\n]",
-                        "key": 0.7435533812301194,
-                        "label": "companyName (string - flowInstance)",
-                        "type": "string"
-                      }
-                    ]
-                  },
-                  "nodeTitle": {
-                    "value": "Set flow instance variables"
-                  },
-                  "nodeDescription": {
-                    "value": "Initialize common values used in the flow so that they're easier to update in one place"
-                  }
-                },
-                "idUnique": "wu1p5ish67"
-              },
-              "position": {
-                "x": 334,
-                "y": 450
               },
               "group": "nodes",
               "removed": false,
@@ -540,8 +420,8 @@
                 }
               },
               "position": {
-                "x": 938,
-                "y": 1024
+                "x": 660,
+                "y": 1020
               },
               "group": "nodes",
               "removed": false,
@@ -585,7 +465,7 @@
                 }
               },
               "position": {
-                "x": 634,
+                "x": 360,
                 "y": 450
               },
               "group": "nodes",
@@ -621,7 +501,7 @@
                 }
               },
               "position": {
-                "x": 934,
+                "x": 660,
                 "y": 450
               },
               "group": "nodes",
@@ -742,7 +622,7 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1084,
+                "x": 810,
                 "y": 630
               },
               "group": "nodes",
@@ -778,7 +658,7 @@
                 }
               },
               "position": {
-                "x": 1324,
+                "x": 990,
                 "y": 630
               },
               "group": "nodes",
@@ -834,7 +714,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 1144,
+                "x": 810,
                 "y": 540
               },
               "group": "nodes",
@@ -901,6 +781,63 @@
           "edges": [
             {
               "data": {
+                "id": "c7trfkylri",
+                "source": "t0im3zjpdh",
+                "target": "qklq9dhol4"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "emucb01so1",
+                "source": "ofk8hitz8r",
+                "target": "zkumd1hvz"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "mtltuph17g",
+                "source": "zkumd1hvz",
+                "target": "fbx7x6gnus"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
                 "id": "2to7volmnk",
                 "source": "dbcjwy026h",
                 "target": "9b7cgoyv9z"
@@ -958,104 +895,9 @@
             },
             {
               "data": {
-                "id": "g8e5n8zg5p",
-                "source": "ze3omkafya",
-                "target": "dbcjwy026h"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "mtltuph17g",
-                "source": "zkumd1hvz",
-                "target": "fbx7x6gnus"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "emucb01so1",
-                "source": "ofk8hitz8r",
-                "target": "zkumd1hvz"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "kqedtqztin",
-                "source": "bb45iggzc5",
-                "target": "ze3omkafya"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
                 "id": "7xytgqexja",
                 "source": "z98ot8mzk7",
                 "target": "t0im3zjpdh"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "c7trfkylri",
-                "source": "t0im3zjpdh",
-                "target": "qklq9dhol4"
               },
               "position": {
                 "x": 0,
@@ -1090,24 +932,8 @@
         }
       },
       "flowColor": "#ff661c",
-      "savedDate": 1678218250970,
-      "variables": [
-        {
-          "context": "flowInstance",
-          "createdDate": 1676296600642,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "type": "property",
-          "visibility": "private",
-          "name": "companyName##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
-        }
-      ],
+      "savedDate": 1678448716968,
+      "variables": [],
       "connections": [],
       "parentFlowId": "1a6a32207dbef6d2f0a9d335b79a583f"
     },
@@ -1123,13 +949,13 @@
         "httpConnector",
         "variablesConnector"
       ],
-      "createdDate": 1678393483769,
-      "currentVersion": 36,
+      "createdDate": 1678449152222,
+      "currentVersion": 38,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
       "description": "Imported on Tue Mar 07 2023 19:05:20 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Sign On with Registration, Password Reset and Recovery",
-      "publishedVersion": 36,
+      "publishedVersion": 38,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -1148,9 +974,9 @@
         "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}"
       },
       "trigger": {},
-      "updatedDate": 1678393487605,
+      "updatedDate": 1678449155725,
       "flowId": "4d3dca9fc4161ab2402e1ed17bd96fd1",
-      "versionId": 36,
+      "versionId": 38,
       "graphData": {
         "elements": {
           "nodes": [
@@ -8839,8 +8665,23 @@
         }
       },
       "flowColor": "#CACED3",
-      "savedDate": 1678393483486,
+      "savedDate": 1678449151947,
       "variables": [
+        {
+          "context": "flowInstance",
+          "createdDate": 1676296600642,
+          "fields": {
+            "type": "string",
+            "displayName": "",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "type": "property",
+          "visibility": "private",
+          "name": "companyName##SK##flowInstance",
+          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
+        },
         {
           "context": "flowInstance",
           "createdDate": 1677009854303,
@@ -8855,21 +8696,6 @@
           "type": "property",
           "visibility": "private",
           "name": "populationId##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1676296600642,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "type": "property",
-          "visibility": "private",
-          "name": "companyName##SK##flowInstance",
           "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
         }
       ]
