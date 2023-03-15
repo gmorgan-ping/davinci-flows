@@ -1,7 +1,7 @@
 {
   "flows": [
     {
-      "companyId": "ee43f700-c751-494d-9dbf-70946a85b328",
+      "companyId": "a05de070-5c56-4ac6-9bd6-9f7d7169767b",
       "authTokenExpireIds": [],
       "connectorIds": [
         "annotationConnector",
@@ -9,13 +9,13 @@
         "pingOneAuthenticationConnector",
         "nodeConnector"
       ],
-      "createdDate": 1678448717036,
-      "currentVersion": 3,
+      "createdDate": 1678898069417,
+      "currentVersion": 1,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
-      "description": "Imported on Tue Mar 07 2023 19:05:21 GMT+0000 (Coordinated Universal Time)",
+      "description": "Imported on Wed Mar 15 2023 16:34:29 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Session Main Flow ",
-      "publishedVersion": 3,
+      "publishedVersion": 1,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -36,9 +36,9 @@
       "trigger": {
         "type": "AUTHENTICATION"
       },
-      "updatedDate": 1678448718581,
-      "flowId": "1a6a32207dbef6d2f0a9d335b79a583f",
-      "versionId": 3,
+      "updatedDate": 1678898069489,
+      "flowId": "d6d6a0db8a8904cea2522bfed75c6c06",
+      "versionId": 1,
       "graphData": {
         "elements": {
           "nodes": [
@@ -351,7 +351,7 @@
               "data": {
                 "id": "z98ot8mzk7",
                 "nodeType": "CONNECTION",
-                "connectionId": "3d5df400637b7e569c767642c13e7386",
+                "connectionId": "c9928f4f5c56a104cbf06fe4e95ec5b6",
                 "connectorId": "flowConnector",
                 "name": "Flow",
                 "label": "Flow",
@@ -362,7 +362,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "PingOne Sign On with Registration, Password Reset and Recovery",
-                      "value": "4d3dca9fc4161ab2402e1ed17bd96fd1"
+                      "value": "dcec5c1adb553f03999789472ea07550"
                     }
                   },
                   "subFlowVersionId": {
@@ -391,9 +391,9 @@
               "data": {
                 "id": "fbx7x6gnus",
                 "nodeType": "CONNECTION",
-                "connectionId": "c3e6a164bde107954e93f5c09f0c8bce",
+                "connectionId": "7dd21b2dc0abac1babfd14f5c53c2a76",
                 "connectorId": "pingOneAuthenticationConnector",
-                "name": "PingOne Authentication",
+                "name": "Ping One Authentication [2023-03-13]",
                 "label": "PingOne Authentication",
                 "status": "configured",
                 "capabilityName": "returnSuccessResponseRedirect",
@@ -436,9 +436,9 @@
               "data": {
                 "id": "dbcjwy026h",
                 "nodeType": "CONNECTION",
-                "connectionId": "c3e6a164bde107954e93f5c09f0c8bce",
+                "connectionId": "7dd21b2dc0abac1babfd14f5c53c2a76",
                 "connectorId": "pingOneAuthenticationConnector",
-                "name": "PingOne Authentication",
+                "name": "Ping One Authentication [2023-03-13]",
                 "label": "PingOne Authentication 2",
                 "status": "configured",
                 "capabilityName": "checkSession",
@@ -481,9 +481,9 @@
               "data": {
                 "id": "h9zati6tdm",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Teleport",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -517,9 +517,9 @@
               "data": {
                 "id": "ofk8hitz8r",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "startNode",
@@ -638,9 +638,9 @@
               "data": {
                 "id": "qklq9dhol4",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -932,13 +932,13 @@
         }
       },
       "flowColor": "#ff661c",
-      "savedDate": 1678448716968,
+      "savedDate": 1678898069387,
       "variables": [],
       "connections": [],
-      "parentFlowId": "1a6a32207dbef6d2f0a9d335b79a583f"
+      "parentFlowId": "d6d6a0db8a8904cea2522bfed75c6c06"
     },
     {
-      "companyId": "ee43f700-c751-494d-9dbf-70946a85b328",
+      "companyId": "a05de070-5c56-4ac6-9bd6-9f7d7169767b",
       "authTokenExpireIds": [],
       "connectorIds": [
         "errorConnector",
@@ -949,13 +949,13 @@
         "httpConnector",
         "variablesConnector"
       ],
-      "createdDate": 1678449152222,
-      "currentVersion": 38,
+      "createdDate": 1678899751634,
+      "currentVersion": 5,
       "customerId": "f3e47d945ae971a4b4142ec75012d155",
-      "description": "Imported on Tue Mar 07 2023 19:05:20 GMT+0000 (Coordinated Universal Time)",
+      "description": "Imported on Wed Mar 15 2023 16:34:28 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "name": "PingOne Sign On with Registration, Password Reset and Recovery",
-      "publishedVersion": 38,
+      "publishedVersion": 5,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -974,9 +974,9 @@
         "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}"
       },
       "trigger": {},
-      "updatedDate": 1678449155725,
-      "flowId": "4d3dca9fc4161ab2402e1ed17bd96fd1",
-      "versionId": 38,
+      "updatedDate": 1678899753190,
+      "flowId": "dcec5c1adb553f03999789472ea07550",
+      "versionId": 5,
       "graphData": {
         "elements": {
           "nodes": [
@@ -1146,9 +1146,9 @@
               "data": {
                 "id": "ofk8hitz8r",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "startNode",
@@ -1215,9 +1215,9 @@
               "data": {
                 "id": "1dw8r9r4eg",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "startNode",
@@ -1316,9 +1316,9 @@
               "data": {
                 "id": "s26s7nbn5d",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -1353,9 +1353,9 @@
               "data": {
                 "id": "scrsg9o0e2",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -1411,9 +1411,9 @@
               "data": {
                 "id": "bviv3cclyg",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -1462,9 +1462,9 @@
               "data": {
                 "id": "ercttap70x",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "startNode",
@@ -1513,9 +1513,9 @@
               "data": {
                 "id": "8tr0nbjz2r",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -1553,9 +1553,9 @@
               "data": {
                 "id": "4qxu8ofxjj",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -1677,9 +1677,9 @@
               "data": {
                 "id": "qp6fpnw2hk",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "startNode",
@@ -1729,9 +1729,9 @@
               "data": {
                 "id": "q58gzphsoq",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -1909,9 +1909,9 @@
               "data": {
                 "id": "zqt7m8uu76",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Teleport",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -2950,7 +2950,7 @@
                     "value": [
                       {
                         "name": "populationId",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"63c56451-84a3-4407-b0ce-b04695767971\"\n      }\n    ]\n  }\n]",
                         "key": 0.9673372774789002,
                         "type": "string",
                         "label": "populationId (string - flowInstance)"
@@ -3046,9 +3046,9 @@
               "data": {
                 "id": "dpo5892st9",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "startNode",
@@ -3370,9 +3370,9 @@
               "data": {
                 "id": "5kyosaxnqb",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -4082,9 +4082,9 @@
               "data": {
                 "id": "exmw1x7cgs",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -4704,9 +4704,9 @@
               "data": {
                 "id": "lf3nqueorj",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "startNode",
@@ -4774,9 +4774,9 @@
               "data": {
                 "id": "j9kqkxa5is",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -5177,7 +5177,7 @@
                 "type": "trigger",
                 "properties": {
                   "customHTML": {
-                    "value": "<div\n  class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n  <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n    <div class=\"card shadow mb-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n        <h1 id=\"header\" class=\"text-center mb-4\">Password Reset</h1>\n        <p class=\"text-muted text-center\">\n          Enter your username, and we'll send password reset instructions to\n          your email address.\n        </p>\n        <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n        <form id=\"usernameForm\" data-id=\"usernameForm\">\n          <div class=\"mb-4 form-floating\">\n            <input id=\"username\" data-id=\"username\" class=\"form-control\" type=\"text\" name=\"username\"\n              placeholder=\"Username\" autocomplete=\"off\" value=\"\" />\n            <label class=\"form-label\" for=\"email\">Username</label>\n          </div>\n          <div class=\"d-flex flex-column\">\n            <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" type=\"submit\"\n              data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" data-skform=\"usernameForm\" data-skbuttonvalue=\"SUBMIT\">\n              Submit\n            </button>\n            <button id=\"cancelBtn\" data-id=\"cancelBtn\" class=\"btn btn-link\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"next-event\" data-skform=\"usernameForm\" data-skbuttonvalue=\"CANCEL\">\n              Cancel\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
+                    "value": "<div\n  class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n  <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n    <div class=\"card shadow mb-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n        <h1 id=\"header\" class=\"text-center mb-4\">Password Reset</h1>\n        <p class=\"text-muted text-center\">\n          Enter your username, and we'll send password reset instructions to\n          your email address.\n        </p>\n        <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n        <p class=\"text-danger mdi mdi-alert-circle\" data-skerrorid=\"username\" data-skcomponent=\"skerrormessage\"></p>\n        <form id=\"usernameForm\" data-id=\"usernameForm\">\n          <div class=\"mb-4 form-floating\">\n            <input id=\"username\" data-id=\"username\" class=\"form-control\" type=\"text\" name=\"username\"\n              placeholder=\"Username\" autocomplete=\"off\" value=\"\" />\n            <label class=\"form-label\" for=\"email\">Username</label>\n          </div>\n          <div class=\"d-flex flex-column\">\n            <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" type=\"submit\"\n              data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" data-skform=\"usernameForm\" data-skbuttonvalue=\"SUBMIT\">\n              Submit\n            </button>\n            <button id=\"cancelBtn\" data-id=\"cancelBtn\" class=\"btn btn-link\" type=\"submit\" data-skcomponent=\"skbutton\"\n              data-skbuttontype=\"next-event\" data-skform=\"usernameForm\" data-skbuttonvalue=\"CANCEL\">\n              Cancel\n            </button>\n          </div>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>"
                   },
                   "formFieldsList": {
                     "value": [
@@ -5203,7 +5203,17 @@
                     "value": "const focusOnFirstInputElement = () => {\r\n  document.getElementById(\"username\").focus();\r\n};\r\n\r\n/**\r\n * If page isn't loaded yet, wait for the page to load, then focus on first\r\n * input element.\r\n */\r\nif (document.readyState === \"loading\") {\r\n  // Loading hasn't finished yet\r\n  document.onreadystatechange = () => {\r\n    if (document.readyState === \"complete\") {\r\n      focusOnFirstInputElement();\r\n    }\r\n  };\r\n} else {\r\n  // `DOMContentLoaded` has already fired\r\n  focusOnFirstInputElement();\r\n}\r\n"
                   },
                   "validationRules": {
-                    "value": []
+                    "value": [
+                      {
+                        "propertyName": "username",
+                        "rules": [
+                          {
+                            "ruleName": "presence",
+                            "message": "Please enter your username"
+                          }
+                        ]
+                      }
+                    ]
                   },
                   "nodeDescription": {
                     "value": "A form for the user to submit the username of the account they forgot the password to"
@@ -5468,9 +5478,9 @@
               "data": {
                 "id": "sqvlrcujem",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -6085,9 +6095,9 @@
               "data": {
                 "id": "jmilzai0kx",
                 "nodeType": "CONNECTION",
-                "connectionId": "b3b6bfe4bcfc8bd1d8851a5664d824d2",
+                "connectionId": "d97833569d352c7affcc2922383462e7",
                 "connectorId": "nodeConnector",
-                "name": "Node",
+                "name": "Node [2022-11-29]",
                 "label": "Node [2023-01-09]",
                 "status": "configured",
                 "capabilityName": "goToNode",
@@ -8665,11 +8675,11 @@
         }
       },
       "flowColor": "#CACED3",
-      "savedDate": 1678449151947,
+      "savedDate": 1678899751400,
       "variables": [
         {
           "context": "flowInstance",
-          "createdDate": 1676296600642,
+          "createdDate": 1671031219394,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -8680,12 +8690,11 @@
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
+          "companyId": "a05de070-5c56-4ac6-9bd6-9f7d7169767b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1677009854303,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1678717254662,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -8696,11 +8705,11 @@
           "type": "property",
           "visibility": "private",
           "name": "populationId##SK##flowInstance",
-          "companyId": "ee43f700-c751-494d-9dbf-70946a85b328"
+          "companyId": "a05de070-5c56-4ac6-9bd6-9f7d7169767b"
         }
       ]
     }
   ],
-  "companyId": "ee43f700-c751-494d-9dbf-70946a85b328",
+  "companyId": "a05de070-5c56-4ac6-9bd6-9f7d7169767b",
   "customerId": "f3e47d945ae971a4b4142ec75012d155"
 }
